@@ -172,7 +172,56 @@ body {
   background-color: #444;
 }
 
-/* Estilos para el formulario existente */
+
+.resenas {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.resenas h2{
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.grid-resenas{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+}
+
+
+.resena {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0, 0.05);
+  transition: transform 0.2s ease,
+  box-shadow 0.2s ease;
+}
+
+.resena:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.resena .texto {
+  font-size: italic;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.resena .autor{
+  color: #111;
+  font-weight: 600;
+  margin: 0;
+}
 .contacto {
   padding: 50px 20px;
   max-width: 500px;
@@ -353,6 +402,19 @@ body {
   .producto {
     padding: 15px;
   }
+
+  
+    .resenas h2{
+      font-size: 26px;
+    }
+    
+    .resena {
+      padding: 20px;
+    }
+
+    .resena .texto {
+      font-size: 15px;
+    }
   
   .contacto {
     padding: 0 15px;
@@ -407,6 +469,32 @@ body {
     margin: 0 auto;
   }
   
+  .resenas {
+    margin: 60px auto;
+  }
+
+  .resenas h2{
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .grid-resenas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .resena{
+    padding: 18px;
+  }
+
+  .resena .texto {
+    font-size: 14.5px;
+  }
+
+  .resena .autor {
+    font-size: 14px;
+  }
+
+
   .contacto form {
     width: 100%;
   }
@@ -453,7 +541,17 @@ body {
     font-size: 14px;
   }
   
-  
+  .resenas h2 {
+    font-size: 22px;
+  }
+
+  .resena {
+    padding: 15px;
+  }
+
+  .resena .texto{
+    font-size: 14px;
+  }
   .footertodo {
     font-size: 12px;
   }
